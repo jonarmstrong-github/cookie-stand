@@ -1,0 +1,16 @@
+/* Developer Style Guide
+    In addition to the requirements listed above, please ensure that your project also contains the following according to our style guide:
+
+    For every lab within this project, you will be creating a new branch for every day. Create a new branch name that follows the following format class##-feature (example: class06-Objects).
+
+    Within your local version of your repo, add your .gitignore and .eslintrc.json.
+
+    While working within your non-main branch, conduct regular commits within git.
+
+    All properties/values and methods should be correctly constructed and given meaningful names.
+
+    Functions and methods should follow the single-responsibility principle.
+
+    Use template literals in your JS logic to render the stores as lists on the sales page
+*/
+
