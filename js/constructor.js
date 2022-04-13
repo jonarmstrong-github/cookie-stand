@@ -17,7 +17,7 @@
 const hours = ['6am', '7am','8am', '9am', '10am', '11am','12am', '1pm', '2pm', '3pm','4pm', '5pm', '6pm', '7pm']
 
 function randomInRange(min, max){
-    const span = max - min + 1;   //check for 'off by one errors'
+    const span = max - min + 1;
     const randInSpan = Math.floor(Math.random() *span);
     return min + randInSpan;
 };
@@ -34,19 +34,16 @@ function Location(title, minCust, maxCust, avgCookieSale, randCookiesPerH, allCo
 
 //  method (function in an object that generates values) property of object
 Location.prototype.genRandCookiesPerH = function () {
-    let total = 0;                              // defines 'total' and sets value to 0.
+    let total = 0;
         console.log(`Code check: ${this.title} genRandCookiesPerH method started.`);
-        for (let i = 0; i < hours.length; i++) {    // declaring a for loop because I know how many times to repeat (once for each 'hour')
+        for (let i = 0; i < hours.length; i++) { 
             const randCustPerH = randomInRange(this.minCust, this.maxCust);
-            // declaring a new variable and filling with a random number(inclusive) from a set min/max range referenced from inside this same object.
-            const cookiesSold = Math.ceil(this.avgCookieSale * randCustPerH);  // The Math.ceil() function always rounds a number up to the next largest integer!
-            // declaring a new variable and filling with the total cookies sold based on average cookie sale and our random customer projection.
-            // const element = hours[index];        // did not use this path
-            this.randCookiesPerH[i] = cookiesSold;  // fills each indexed in the randCookiesPerH array with the number of cookies sold.
-            total += cookiesSold;                   // adds each run of the loop together for a grand total.
+            const cookiesSold = Math.ceil(this.avgCookieSale * randCustPerH);
+            this.randCookiesPerH[i] = cookiesSold;
+            total += cookiesSold;
         }
-        this.allCookiesSold = total;                // fills allCookiesSold in the object with the total from the getRandCookiesPerH method.
-        console.log(`Code check: ${this.title} genRandCookiesPerH method ended with a total value of "${total}".`);     // simple test
+        this.allCookiesSold = total;
+        console.log(`Code check: ${this.title} genRandCookiesPerH method ended with a total value of "${total}".`);
 };
 
 // render: function () {
@@ -108,7 +105,7 @@ Location.prototype.genRandCookiesPerH = function () {
 // constructors will generally be put at the bottom even though JS will hoist things if necessary
 
 const seattle = new Location('Seattle', 23, 65, 6.3);
-console.log(seattle);  // lower case
+console.log(seattle);  // lower case...  why?
 
 const tokyo = new Location('Tokyo', 3, 24, 1.2);
 console.log(tokyo);
