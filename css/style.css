@@ -14,3 +14,46 @@
     Use template literals in your JS logic to render the stores as lists on the sales page
 */
 
+body{
+    margin:auto;
+    width:800px;
+    padding:10px;
+    background-color:skyblue;
+    color:seagreen
+}
+
+h1 {
+    font-family: "Cookie", cursive;
+    font-size: 6em;
+    color: salmon;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+h2 {
+    font-family: "Cookie", cursive;
+    font-size: 4em;
+    line-height: 50px;
+    border:2px solid salmon;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+a:link, a:visited {  /*inspired by W3Schools*/
+    border: 2px solid salmon;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: seagreen;
+  }
+
+}
