@@ -14,44 +14,83 @@
     Use template literals in your JS logic to render the stores as lists on the sales page
 */
 
-body{
-    margin:auto;
-    width:800px;
-    padding:10px;
-    background-color:skyblue;
-    color:seagreen
+body {
+    background-color: skyblue;
+    border: 0;
+    color: seagreen;
+    font: inherit;
+    font-size: 100%;
+    margin: auto;
+    vertical-align: baseline;
+    width: 800px;
 }
 
 h1 {
+    color: salmon;
     font-family: "Cookie", cursive;
     font-size: 6em;
-    color: salmon;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
     font-weight: bold;
+    margin: auto;
+    padding: 10px
 }
+
 h2 {
     font-family: "Cookie", cursive;
     font-size: 4em;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    margin-right: 0;
     font-weight: bold;
+    margin: auto;
+    padding: 10px
 }
 
-a:link, a:visited {  /*inspired by W3Schools*/
+h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: bold;
+    margin: auto;
+    padding: 10px
+}
+
+p {
+    padding: 10px
+}
+
+li{
+    color: salmon;
+    font-weight: bold;
+
+}
+
+img {
+    display: flex;
+    justify-content: center;
+}
+
+table, th, td {
+    border: 1px solid salmon;
+}
+a:link,
+a:visited {
+    /*inspired by W3Schools*/
     border: 2px solid salmon;
+    display: inline-block;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
-  }
-  
-  a:hover, a:active {
-    background-color: seagreen;
-  }
+}
 
+a:hover,
+a:active {
+    background-color: seagreen;
+}
+
+#center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

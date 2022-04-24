@@ -1,13 +1,3 @@
-// Sales Data
-// Within your javascript file (example: app.js), create separate JS object literals for each shop location that outputs the following to the sales.html file:
-// --needs to store name/location
-// Stores the min/max hourly customers, and the average cookies per customer, in object properties
-// --need an array?
-// Uses a method of that object to generate a random number of customers per hour. Objects/Math/random
-// --enable a function that represent customers per hour
-// Calculate and store the simulated amounts of cookies purchased for each hour at each location using average cookies purchased and the random number of customers generated
-// Store the results for each location in a separate array… perhaps as a property of the object representing that location
-
 const hours = ['6am', '7am','8am', '9am', '10am', '11am','12am', '1pm', '2pm', '3pm','4pm', '5pm', '6pm', '7pm']
 //setting hours manually in an array named 'hours'...  this way .length can be called later.
 
@@ -15,7 +5,8 @@ function randomInRange(min, max){
     const span = max - min + 1;   //check for 'off by one errors'
     const randInSpan = Math.floor(Math.random() *span);
     return min + randInSpan;
-}
+};
+
 const seattle = {                       // const is declaring a 'seattle' named object
     title: "Seattle",                   // key:value  value is called with object.key  This key is holding a string
     minCust: 23,                        // Everything needs a comma!!!   
